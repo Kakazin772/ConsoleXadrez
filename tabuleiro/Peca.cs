@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Tabuleiro
+namespace tabuleiro
 {
     class Peca
     {
-        public Posicao Pos { get; protected set; }
+        public Posicao Pos { get; set; }
         public Cor Cores { get; protected set; }
         public Tabuleiro Tab { get; protected set; }
 
         public int QteMovimentos { get; protected set; }
 
-        public Peca(Posicao pos, Cor cor, Tabuleiro tab)
+        public Peca(Cor cor, Tabuleiro tab)
         {
-            Pos = pos;
+            Pos = null;
             Cores = cor;
             Tab = tab;
             QteMovimentos = 0;
